@@ -1,0 +1,38 @@
+<pnp:Files xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
+  <!--SCRIPTS-->
+  <pnp:File Src="../../SiteAssets\JS\aspc.scripts.js" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/JS" Overwrite="true" />
+  <pnp:File Src="../../SiteAssets\JS\jquery-3.1.0.min.js" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/JS" Overwrite="true" />
+  <pnp:File Src="../../SiteAssets\JS\knockout-3.4.1.js" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/JS" Overwrite="true" />
+  <pnp:File Src="../../SiteAssets\JS\knockout.extentions.js" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/JS" Overwrite="true" />
+  <!--STYLE-->
+  <pnp:File Src="../../SiteAssets\CSS\style.css" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/CSS" Overwrite="true" />
+ 
+  <!--IMAGES-->
+  <pnp:File Src="../../SiteAssets\Images\inmeta-logo.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
+  <!--MASTERPAGES / PAGELAYOUTS-->
+  <pnp:File Src="../../UI\Masterpages\aspc.master" Folder="{sitecollection}/_catalogs/MasterPage/ASPC" Overwrite="true" />  
+  <pnp:File Src="../../UI\PageLayouts\Default.aspx" Folder="{sitecollection}/_catalogs/MasterPage/ASPC" Overwrite="true" >
+    <pnp:Properties>
+      <pnp:Property Key="Title" Value="Default" />
+      <pnp:Property Key="ContentTypeId" Value="0x01010007FF3E057FA8AB4AA42FCB67B453FFC100E214EEE741181F4E9F7ACC43278EE811" />
+      <pnp:Property Key="PublishingAssociatedContentType" Value=";#Default;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF39000E61286290764EC09B16EEC25ECDB70F;#"/>
+    </pnp:Properties>
+  </pnp:File>
+  <pnp:File Src="../../UI\PageLayouts\Home.aspx" Folder="{sitecollection}/_catalogs/MasterPage/ASPC" Overwrite="true" >
+    <pnp:Properties>
+      <pnp:Property Key="Title" Value="Home" />
+      <pnp:Property Key="ContentTypeId" Value="0x01010007FF3E057FA8AB4AA42FCB67B453FFC100E214EEE741181F4E9F7ACC43278EE811" />
+      <pnp:Property Key="PublishingAssociatedContentType" Value=";#Home;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390083A6FE10FF6B4FF09BFF823F16DBF923;#"/>
+    </pnp:Properties>
+  </pnp:File>  
+  <!--DISPLAY TEMPLATES-->  
+  <pnp:File Src="../../UI\DisplayTemplates\Control_Varsler.html" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/DisplayTemplates" Overwrite="true" />
+  <pnp:File Src="../../UI\DisplayTemplates\Item_Varsler.html" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/DisplayTemplates" Overwrite="true" />
+  <pnp:File Src="../../UI\DisplayTemplates\Group_Varsler.html" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/DisplayTemplates" Overwrite="true" />  
+  <!--WEBPARTS-->
+  <pnp:File Src="../../UI\WebParts\Files\Nyheter.webpart" Folder="{sitecollection}/_catalogs/wp" Overwrite="true">
+    <pnp:Properties>
+      <pnp:Property Key="Group" Value="ASPC"></pnp:Property>
+    </pnp:Properties>
+  </pnp:File>  
+</pnp:Files>

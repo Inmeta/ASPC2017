@@ -1,0 +1,49 @@
+﻿<pnp:Lists xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
+  <pnp:ListInstance Title="Snarveier" TemplateType="103" Url="Lists/Snarveier">
+    <!--<pnp:ContentTypeBindings>
+        <pnp:ContentTypeBinding ContentTypeID="0x01050086FCAD3C92FE47AABA8AA38F552C390D" Default="true"/>
+      </pnp:ContentTypeBindings>
+    <pnp:DataRows>
+      <pnp:DataRow>
+        <pnp:DataValue FieldName="URL">http://www.vg.no,Portaler</pnp:DataValue>
+        <pnp:DataValue FieldName="Kjede">Coop Elektro|d30434d9-21e3-4fa0-a016-35b2e058a876</pnp:DataValue>
+      </pnp:DataRow>
+      <pnp:DataRow>
+        <pnp:DataValue FieldName="URL">http://www.db.no,Serviceportalen</pnp:DataValue>
+        <pnp:DataValue FieldName="Kjede">Coop Elektro|d30434d9-21e3-4fa0-a016-35b2e058a876</pnp:DataValue>
+      </pnp:DataRow>
+      <pnp:DataRow>
+        <pnp:DataValue FieldName="URL">http://www.tek.no,Planogrammer</pnp:DataValue>
+        <pnp:DataValue FieldName="Kjede">Coop Elektro|d30434d9-21e3-4fa0-a016-35b2e058a876</pnp:DataValue>
+      </pnp:DataRow>
+      <pnp:DataRow>
+        <pnp:DataValue FieldName="URL">http://www.sb.no,Varegrupper</pnp:DataValue>
+        <pnp:DataValue FieldName="Kjede">Coop Extra|757d68e4-6c4e-464c-b78b-b9a6a58f75d4</pnp:DataValue>
+      </pnp:DataRow>
+      <pnp:DataRow>
+        <pnp:DataValue FieldName="URL">http://www.vg.no,Rutiner</pnp:DataValue>
+        <pnp:DataValue FieldName="Kjede">Coop Extra|757d68e4-6c4e-464c-b78b-b9a6a58f75d4</pnp:DataValue>
+      </pnp:DataRow>
+      <pnp:DataRow>
+        <pnp:DataValue FieldName="URL">http://www.db.no,Personalhåndbok</pnp:DataValue>
+        <pnp:DataValue FieldName="Kjede">Coop Extra|757d68e4-6c4e-464c-b78b-b9a6a58f75d4</pnp:DataValue>
+      </pnp:DataRow>
+      <pnp:DataRow>
+        <pnp:DataValue FieldName="URL">http://www.sb.no,HMS-håndbok</pnp:DataValue>
+        <pnp:DataValue FieldName="Kjede">Coop Extra|757d68e4-6c4e-464c-b78b-b9a6a58f75d4</pnp:DataValue>
+      </pnp:DataRow>
+      <pnp:DataRow>
+        <pnp:DataValue FieldName="URL">http://www.tek.no,Cooperaktiv</pnp:DataValue>
+        <pnp:DataValue FieldName="Kjede">Coop Marked|fc0fcf60-6682-4d59-9178-54107dd49676</pnp:DataValue>
+      </pnp:DataRow>
+      <pnp:DataRow>
+        <pnp:DataValue FieldName="URL">http://www.coop.no,Løpende kundemåling</pnp:DataValue>
+        <pnp:DataValue FieldName="Kjede">Coop Marked|fc0fcf60-6682-4d59-9178-54107dd49676</pnp:DataValue>
+      </pnp:DataRow>
+      <pnp:DataRow>
+        <pnp:DataValue FieldName="URL">http://www.vg.no,Rutinemal</pnp:DataValue>
+        <pnp:DataValue FieldName="Kjede">Coop Marked|fc0fcf60-6682-4d59-9178-54107dd49676</pnp:DataValue>
+      </pnp:DataRow>
+    </pnp:DataRows>
+  </pnp:ListInstance>-->
+</pnp:Lists>

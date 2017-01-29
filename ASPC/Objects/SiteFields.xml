@@ -1,0 +1,3 @@
+<pnp:SiteFields xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
+  <Field ID="{174420fc-4423-4063-8820-71d749e0e056}" Name="ASPCName" DisplayName="ASPC Name" Type="Text" Group="{parameter:GenericFieldsGroup}" Description="" />
+</pnp:SiteFields>

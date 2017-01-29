@@ -1,0 +1,35 @@
+﻿<pnp:TermGroups xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
+  <pnp:TermGroup Name="ASPC" ID="0e8f395e-ff58-4d45-9ff7-e331ab728beb">
+    <pnp:TermSets>
+      <pnp:TermSet Name="Meny" ID="5880b01b-5d6f-4606-a492-3b03a2fb4dd7" Language="1033">
+        <pnp:Terms>
+          <pnp:Term Name="Butikk" ID="87c55100-8316-4da0-97fd-feb5731880f6">
+            <pnp:CustomProperties>
+              <pnp:Property Key="CoopUrl" Value="/butikk" />
+            </pnp:CustomProperties>
+          </pnp:Term>
+          <pnp:Term Name="Kunde og Medlem" ID="DF657F0E-F340-4FC6-B028-36BB1DEDDCF0">
+            <pnp:CustomProperties>
+              <pnp:Property Key="CoopUrl" Value="/kunde-og-medlem" />
+            </pnp:CustomProperties>
+          </pnp:Term>
+          <pnp:Term Name="Sortiment" ID="288EE91E-34BF-468E-A0B0-3C9590872081">
+            <pnp:CustomProperties>
+              <pnp:Property Key="CoopUrl" Value="/sortiment" />
+            </pnp:CustomProperties>
+          </pnp:Term>
+          <pnp:Term Name="Vareforsyning" ID="C4D035B5-9958-45D5-8EE2-865E7C2CB81A">
+            <pnp:CustomProperties>
+              <pnp:Property Key="CoopUrl" Value="/vareforsyning" />
+            </pnp:CustomProperties>
+          </pnp:Term>
+          <pnp:Term Name="Støttetjenester" ID="23E6FE19-E0CD-4D50-A266-C2894FEAE631">
+            <pnp:CustomProperties>
+              <pnp:Property Key="CoopUrl" Value="/stottetjenester" />
+            </pnp:CustomProperties>
+          </pnp:Term>
+        </pnp:Terms>
+      </pnp:TermSet>
+    </pnp:TermSets>
+  </pnp:TermGroup>
+</pnp:TermGroups>

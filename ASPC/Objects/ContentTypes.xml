@@ -1,0 +1,12 @@
+<pnp:ContentTypes xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
+  <pnp:ContentType ID="0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF39000E61286290764EC09B16EEC25ECDB70F" Name="Default" Group="{parameter:GenericContentTypesGroup}" Description="Content Type for ASPC Default" Inherits="TRUE">
+    <pnp:FieldRefs>      
+      <pnp:FieldRef ID="{174420fc-4423-4063-8820-71d749e0e056}" Name="ASPCName" />
+    </pnp:FieldRefs>
+  </pnp:ContentType>
+  <pnp:ContentType ID="0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF390083A6FE10FF6B4FF09BFF823F16DBF923" Name="Home" Group="{parameter:GenericContentTypesGroup}" Description="Content Type for ASPC Home" Inherits="TRUE">
+    <pnp:FieldRefs>
+      <pnp:FieldRef ID="{174420fc-4423-4063-8820-71d749e0e056}" Name="ASPCName" />
+    </pnp:FieldRefs>
+  </pnp:ContentType>
+</pnp:ContentTypes>

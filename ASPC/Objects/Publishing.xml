@@ -1,0 +1,6 @@
+﻿<pnp:Publishing xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema" AutoCheckRequirements="MakeCompliant">
+  <pnp:PageLayouts Default="Coop\Default.aspx">
+    <pnp:PageLayout Path="Coop\Default.aspx" />
+    <pnp:PageLayout Path="Coop\Home.aspx" />
+  </pnp:PageLayouts>
+</pnp:Publishing>
