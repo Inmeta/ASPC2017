@@ -1,9 +1,9 @@
 ﻿param 
 ( 
     [string]$exepathcmd = "C:\Users\Administrator\Desktop\ASPC\ASPC\bin\Debug", #Path to exe file
-	[string]$exeurl = "url", #Url to site 
-	[string]$exeusr = "administrator", #Username with domain
-	[string]$exepass = "Password01", #Password for user
+	[string]$exeurl = "URL", #Url to site 
+	[string]$exeusr = "USERNAME", #Username with domain
+	[string]$exepass = "PASSWORD", #Password for user
 	[string]$environment= "dev" #dev or cloud
 	
 )
