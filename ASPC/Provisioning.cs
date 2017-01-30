@@ -1,12 +1,8 @@
 ﻿using Microsoft.SharePoint.Client;
 using OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Security;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ASPC
 {
@@ -40,9 +36,11 @@ namespace ASPC
                 ctx.Load(web, w => w.Title);
                 if (ctx.WebExistsFullUrl(webUrl))
                 {
+                    Console.WriteLine("Checking...");
                     ctx.ExecuteQuery();
                     var provider = new XMLFileSystemTemplateProvider(String.Format(@"{0}\..\..\", AppDomain.CurrentDomain.BaseDirectory), string.Empty);
                     var template = provider.GetTemplate("template.xml");
+                    web.ApplyProvisioningTemplate(template);
                 }
             }
 
