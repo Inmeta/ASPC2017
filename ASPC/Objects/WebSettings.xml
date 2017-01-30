@@ -3,7 +3,6 @@
       Description="This is an ASPC site."
       MasterPageUrl="{sitecollection}/_catalogs/MasterPage/Seattle.master"
       CustomMasterPageUrl="{sitecollection}/_catalogs/MasterPage/ASPC/aspc.master"
-      WelcomePage="Pages/Home.aspx"
       SiteLogo="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images/aspc-logo.png"
       AlternateCSS="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/CSS/style.css">
 </pnp:WebSettings>

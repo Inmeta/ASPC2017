@@ -16,7 +16,7 @@
       <!--<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/SiteFields.xml" />-->
       <!--<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/ContentTypes.xml" />-->   
       <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/Files.xml" />
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/WebSettings.xml" />
+      <!--<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Objects/WebSettings.xml" />-->
       
     </pnp:ProvisioningTemplate>
   </pnp:Templates>
