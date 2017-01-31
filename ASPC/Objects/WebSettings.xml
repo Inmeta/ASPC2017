@@ -1,8 +1,8 @@
 <pnp:WebSettings xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema"
-      Title="ASPC Site"
-      Description="This is an ASPC site."
+      Title="Zion Zentral"
+      Description="Zion Zentral"
       MasterPageUrl="{sitecollection}/_catalogs/MasterPage/Seattle.master"
       CustomMasterPageUrl="{sitecollection}/_catalogs/MasterPage/ASPC/aspc.master"
-      SiteLogo="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images/aspc-logo.png"
+      SiteLogo="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images/zion-logo.png"
       AlternateCSS="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/CSS/style.css">
 </pnp:WebSettings>

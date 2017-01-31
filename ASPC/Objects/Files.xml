@@ -25,7 +25,8 @@
 <pnp:File Src="../../SiteAssets\Images\combined_gradient.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
 <pnp:File Src="../../SiteAssets\Images\empty.gif" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
 <pnp:File Src="../../SiteAssets\Images\favicon.ico" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
- <pnp:File Src="../../SiteAssets\Images\logo.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
+<pnp:File Src="../../SiteAssets\Images\zion-logo.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" />
+<pnp:File Src="../../SiteAssets\Images\zion-logo-wide.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" />
 <pnp:File Src="../../SiteAssets\Images\map.jpg" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
 <pnp:File Src="../../SiteAssets\Images\slide1.jpg" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
 <pnp:File Src="../../SiteAssets\Images\slide2.jpg" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 

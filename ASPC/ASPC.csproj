@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'RunEXE|AnyCPU'">
+    <OutputPath>bin\RunEXE\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Azure.ActiveDirectory.GraphClient, Version=2.1.10.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Azure.ActiveDirectory.GraphClient.2.1.1\lib\portable-net4+sl5+win+wpa+wp8\Microsoft.Azure.ActiveDirectory.GraphClient.dll</HintPath>
@@ -190,12 +193,14 @@
     <Content Include="SiteAssets\Images\empty.gif" />
     <Content Include="SiteAssets\Images\favicon.ico" />
     <Content Include="SiteAssets\Images\inmeta-logo.png" />
-    <Content Include="SiteAssets\Images\logo.png" />
+    <Content Include="SiteAssets\Images\logo_old.png" />
     <Content Include="SiteAssets\Images\map.jpg" />
     <Content Include="SiteAssets\Images\modern.jpg" />
     <Content Include="SiteAssets\Images\slide1.jpg" />
     <Content Include="SiteAssets\Images\slide2.jpg" />
     <Content Include="SiteAssets\Images\slide3.jpg" />
+    <Content Include="SiteAssets\Images\zion-logo-wide.png" />
+    <Content Include="SiteAssets\Images\zion-logo.png" />
     <Content Include="SiteAssets\JS\aspc.scripts.js" />
     <Content Include="SiteAssets\JS\flexslider.js" />
     <Content Include="SiteAssets\JS\jquery-3.1.0.min.js" />
