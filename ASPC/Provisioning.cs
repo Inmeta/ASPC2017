@@ -41,6 +41,8 @@ namespace ASPC
                     var provider = new XMLFileSystemTemplateProvider(String.Format(@"{0}\..\..\", AppDomain.CurrentDomain.BaseDirectory), string.Empty);
                     var template = provider.GetTemplate("template.xml");
                     web.ApplyProvisioningTemplate(template);
+                    Console.WriteLine("Publishing files");
+                    PublishFiles(ctx, webUrl, username, password, environment);
                 }
             }
 
@@ -53,6 +55,26 @@ namespace ASPC
                 return new SharePointOnlineCredentials(uname, pwd);
             else
                 return new NetworkCredential(uname, pwd);
+        }
+
+        private void PublishFiles(ClientContext clientContext, string UrlPath, string uname, SecureString pwd, string environment)
+        {
+            var list = clientContext.Web.Lists.GetByTitle("Masterpage Gallery");
+            var camlQuery = new CamlQuery();
+            if (UrlPath.Contains("sites"))
+                camlQuery.FolderServerRelativeUrl = string.Format("/{0}/{1}{2}", "sites", UrlPath.Split(new string[] { string.Format("/{0}/", "sites") }, StringSplitOptions.None)[1], "/_catalogs/masterpage/ASPC");
+            else
+                camlQuery.FolderServerRelativeUrl = "/_catalogs/masterpage/ASPC";
+            camlQuery.ViewXml = @"<View Scope='Recursive'><Query><Where><And><Neq><FieldRef Name='_Level'/><Value Type='Integer'>1</Value></Neq><Neq><FieldRef Name='File_x0020_Type' /><Value Type='Text'>js</Value></Neq></And></Where></Query></View>";
+            var listItems = list.GetItems(camlQuery);
+            clientContext.Load(listItems);
+            clientContext.ExecuteQuery();
+            foreach (var item in listItems)
+            {
+                item.File.Publish("");
+            }
+
+            clientContext.ExecuteQuery();
         }
     }
 }
