@@ -1,34 +1,15 @@
 <pnp:Files xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
-  <!--SCRIPTS-->
-  <pnp:File Src="../../SiteAssets\JS\main.js" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/JS" Overwrite="true" />
+  <!--SCRIPTS-->  
   <pnp:File Src="../../SiteAssets\JS\aspc.scripts.js" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/JS" Overwrite="true" />
-  <!--<pnp:File Src="../../SiteAssets\JS\jquery-3.1.0.min.js" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/JS" Overwrite="true" />-->
-
-  <pnp:File Src="../../UI\MasterPages\aspc.master" Folder="{sitecollection}/_catalogs/MasterPage/ASPC" Overwrite="true" />
-
+  <pnp:File Src="../../SiteAssets\JS\jquery-3.1.0.min.js" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/JS" Overwrite="true" />
   <pnp:File Src="../../SiteAssets\JS\knockout-3.4.1.js" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/JS" Overwrite="true" />
   <pnp:File Src="../../SiteAssets\JS\knockout.extentions.js" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/JS" Overwrite="true" />
-    <pnp:File Src="../../SiteAssets\JS\flexslider.js" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/JS" Overwrite="true" />
-    <pnp:File Src="../../SiteAssets\JS\knockout-3.4.1.js" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/JS" Overwrite="true" />
-    <pnp:File Src="../../SiteAssets\JS\knockout.extentions.js" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/JS" Overwrite="true" />
+  <!--Files-->
+  <pnp:File Src="../../UI\MasterPages\aspc.master" Folder="{sitecollection}/_catalogs/MasterPage/ASPC" Overwrite="true" />
   <!--STYLE-->
-  <pnp:File Src="../../SiteAssets\CSS\style.css" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/CSS" Overwrite="true" />
- 
+  <pnp:File Src="../../SiteAssets\CSS\style.css" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/CSS" Overwrite="true" /> 
   <!--IMAGES-->
-  <pnp:File Src="../../SiteAssets\Images\logo.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
-  
-<pnp:File Src="../../SiteAssets\Images\apple-touch-icon-114x114.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
-<pnp:File Src="../../SiteAssets\Images\apple-touch-icon-72x72.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
-<pnp:File Src="../../SiteAssets\Images\apple-touch-icon.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
-<pnp:File Src="../../SiteAssets\Images\bg_direction_nav.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
-<pnp:File Src="../../SiteAssets\Images\combined.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
-<pnp:File Src="../../SiteAssets\Images\combined_gradient.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
-<pnp:File Src="../../SiteAssets\Images\empty.gif" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
-<pnp:File Src="../../SiteAssets\Images\favicon.ico" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
-<pnp:File Src="../../SiteAssets\Images\zion-logo.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" />
-<pnp:File Src="../../SiteAssets\Images\zion-logo-wide.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" />
-<pnp:File Src="../../SiteAssets\Images\map.jpg" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
-<pnp:File Src="../../SiteAssets\Images\slide1.jpg" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
-<pnp:File Src="../../SiteAssets\Images\slide2.jpg" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
-<pnp:File Src="../../SiteAssets\Images\slide3.jpg" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" /> 
+  <pnp:File Src="../../SiteAssets\Images\logo.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" />
+  <pnp:File Src="../../SiteAssets\Images\zion-logo.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" />
+  <pnp:File Src="../../SiteAssets\Images\zion-logo-wide.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" />
 </pnp:Files>
