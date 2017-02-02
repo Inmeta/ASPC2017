@@ -61,6 +61,12 @@ namespace ASPC
                     //Publish files in masterpage gallery
                     if(fulldeploy == "true")
                         PublishFiles(ctx, webUrl, username, password, environment);
+                    else
+                    {
+                        template.ContentTypes.Clear();
+                        template.Lists.Clear();
+                        template.SiteFields.Clear();                        
+                    }
                 }
             }
 
