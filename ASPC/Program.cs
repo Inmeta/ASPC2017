@@ -14,7 +14,7 @@ namespace ASPC
             string url = args[0];
 
             //Checking url parameter
-            if (args.Length != 4 || !CheckURLValid(url))
+            if (args.Length != 5 || !CheckURLValid(url))
             {
                 Console.WriteLine("Invalid arguments. 4 arguments required and valid url!");
                 return;
