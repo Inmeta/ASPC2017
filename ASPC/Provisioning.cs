@@ -46,17 +46,18 @@ namespace ASPC
                 var web = ctx.Web;
                 ctx.Load(web, w => w.Title);
                 if (ctx.WebExistsFullUrl(webUrl))
-                {
-                    Console.WriteLine("Checking...");
+                {                    
                     ctx.ExecuteQuery();
-                    
+
+                    Console.WriteLine("Getting template...");
                     //Getting PnP provisioning template
                     var provider = new XMLFileSystemTemplateProvider(String.Format(@"{0}\..\..\", AppDomain.CurrentDomain.BaseDirectory), string.Empty);
                     var template = provider.GetTemplate("template.xml");
-                    
+
+                    Console.WriteLine("Applying template...");
                     //Applying provisioning template
                     web.ApplyProvisioningTemplate(template);
-                    Console.WriteLine("Publishing files");
+                    Console.WriteLine("Template applied. Publishing files...");
                     
                     //Publish files in masterpage gallery
                     if(fulldeploy == "true")
@@ -91,7 +92,7 @@ namespace ASPC
          */
         private void PublishFiles(ClientContext clientContext, string UrlPath, string uname, SecureString pwd, string environment)
         {
-            var list = clientContext.Web.Lists.GetByTitle("Masterpage Gallery");
+            var list = clientContext.Web.Lists.GetByTitle("Master Page Gallery");
             var camlQuery = new CamlQuery();
             if (UrlPath.Contains("sites"))
                 camlQuery.FolderServerRelativeUrl = string.Format("/{0}/{1}{2}", "sites", UrlPath.Split(new string[] { string.Format("/{0}/", "sites") }, StringSplitOptions.None)[1], "/_catalogs/masterpage/ASPC");

@@ -9,7 +9,9 @@
   <!--STYLE-->
   <pnp:File Src="../../SiteAssets\CSS\style.css" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/CSS" Overwrite="true" /> 
   <!--IMAGES-->
-  <pnp:File Src="../../SiteAssets\Images\logo.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" />
   <pnp:File Src="../../SiteAssets\Images\zion-logo.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" />
   <pnp:File Src="../../SiteAssets\Images\zion-logo-wide.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" />
+  <!--PAGES-->
+  <pnp:File Src="../../UI\PageLayouts\Default.aspx" Folder="{sitecollection}/_catalogs/MasterPage/ASPC" Overwrite="false" />
+  <pnp:File Src="../../UI\PageLayouts\Home.aspx" Folder="{sitecollection}/_catalogs/MasterPage/ASPC" Overwrite="false" />
 </pnp:Files>

@@ -311,7 +311,7 @@
 <div id="siteIcon" class="ms-tableCell ms-verticalAlignTop">
 	<SharePoint:AjaxDelta id="DeltaSiteLogo" BlockElement="true" runat="server">
 		<SharePoint:SPSimpleSiteLink CssClass="ms-siteicon-a" runat="server" id="onetidProjectPropertyTitleGraphic" >
-			<SharePoint:SiteLogoImage CssClass="ms-siteicon-img" name="onetidHeadbnnr0" id="onetidHeadbnnr2" LogoImageUrl="zionzentral/_catalogs/masterpage/ASPC/SiteAssets/images/zion-logo-wide.png runat="server"/>
+			<SharePoint:SiteLogoImage CssClass="ms-siteicon-img" name="onetidHeadbnnr0" id="onetidHeadbnnr2" LogoImageUrl="/_layouts/15/images/siteIcon.png?rev=44" runat="server"/>
 		</SharePoint:SPSimpleSiteLink>
 	</SharePoint:AjaxDelta>
 </div>
