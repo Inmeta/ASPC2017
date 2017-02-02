@@ -24,9 +24,10 @@ namespace ASPC
             string username = args[1];
             string pwd = args[2];
             string env = args[3];
+            string full = args[4];
 
             //Running provisioning
-            Provisioning.Instance.Provision(url, username, pwd, env);
+            Provisioning.Instance.Provision(url, username, pwd, env, full);
         }
 
         /*

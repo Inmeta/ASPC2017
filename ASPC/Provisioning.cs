@@ -26,7 +26,7 @@ namespace ASPC
         /*
          * Method for PnP provisioning.
          */
-        public void Provision(string webUrl, string username, string pwd, string environment)
+        public void Provision(string webUrl, string username, string pwd, string environment, string fulldeploy)
         {
             Console.WriteLine("Starting provisioning");
 
@@ -59,7 +59,8 @@ namespace ASPC
                     Console.WriteLine("Publishing files");
                     
                     //Publish files in masterpage gallery
-                    PublishFiles(ctx, webUrl, username, password, environment);
+                    if(fulldeploy == "true")
+                        PublishFiles(ctx, webUrl, username, password, environment);
                 }
             }
 
