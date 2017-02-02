@@ -21,27 +21,44 @@ namespace ASPC
                 return _instance;
             }
         }
+        
+
+        /*
+         * Method for PnP provisioning.
+         */
         public void Provision(string webUrl, string username, string pwd, string environment)
         {
             Console.WriteLine("Starting provisioning");
+
+            //Creating securestring password based on input parameter
             var password = new SecureString();
             foreach (var c in pwd.ToCharArray())
             {
                 password.AppendChar(c);
             }
+
             using (var ctx = new ClientContext(webUrl))
             {
+                //Setting credentials
                 ctx.Credentials = GetCredentials(username, password, environment);
+
+                //Getting web
                 var web = ctx.Web;
                 ctx.Load(web, w => w.Title);
                 if (ctx.WebExistsFullUrl(webUrl))
                 {
                     Console.WriteLine("Checking...");
                     ctx.ExecuteQuery();
+                    
+                    //Getting PnP provisioning template
                     var provider = new XMLFileSystemTemplateProvider(String.Format(@"{0}\..\..\", AppDomain.CurrentDomain.BaseDirectory), string.Empty);
                     var template = provider.GetTemplate("template.xml");
+                    
+                    //Applying provisioning template
                     web.ApplyProvisioningTemplate(template);
                     Console.WriteLine("Publishing files");
+                    
+                    //Publish files in masterpage gallery
                     PublishFiles(ctx, webUrl, username, password, environment);
                 }
             }
@@ -49,6 +66,11 @@ namespace ASPC
             Console.WriteLine(String.Format("Finished. Press [Enter] to exit."), true);
             Console.ReadLine();
         }
+
+        /*
+         * Setting credential
+         * Returns cloud credentials or credentials for on-prem
+         */
         public static ICredentials GetCredentials(string uname, SecureString pwd, string environment)
         {
             if (environment == "cloud")
@@ -57,6 +79,9 @@ namespace ASPC
                 return new NetworkCredential(uname, pwd);
         }
 
+        /*
+         * Method for publishing files in masterpage gallery
+         */
         private void PublishFiles(ClientContext clientContext, string UrlPath, string uname, SecureString pwd, string environment)
         {
             var list = clientContext.Web.Lists.GetByTitle("Masterpage Gallery");
