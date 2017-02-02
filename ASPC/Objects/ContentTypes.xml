@@ -9,4 +9,13 @@
       <pnp:FieldRef ID="{174420fc-4423-4063-8820-71d749e0e056}" Name="ASPCName" />
     </pnp:FieldRefs>
   </pnp:ContentType>
+  <pnp:ContentType ID="0x0100076DFC42F03D4A7B8CE8D58DB30B1589" Name="Missions" Group="{parameter:GenericContentTypesGroup}" Description="Contenttype for missions" Inherits="TRUE">
+    <pnp:FieldRefs>      
+      <pnp:FieldRef ID="{652FF1D2-CCD1-447F-A9C9-32E49657F963}" Name="Location" />
+      <pnp:FieldRef ID="{3C02EFAD-0AE2-47D6-B825-7CF17B71C4F8}" Name="Ammunition" />
+      <pnp:FieldRef ID="{D9A2B04A-A079-4528-992C-76E09F378AEF}" Name="Mission Status" />
+      <pnp:FieldRef ID="{A9A5EDF7-0AFA-4F4C-ABB3-C82DD5BE3AAA}" Name="Members" />
+      <pnp:FieldRef ID="{D93EB127-864D-41CB-BDC4-890D33EDB696}" Name="Mission" />
+    </pnp:FieldRefs>
+  </pnp:ContentType>
 </pnp:ContentTypes>

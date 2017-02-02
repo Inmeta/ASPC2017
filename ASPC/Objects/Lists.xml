@@ -1,2 +1,12 @@
-﻿<pnp:Lists xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">   
+﻿<pnp:Lists xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
+  <pnp:ListInstance Title="Missions" TemplateType="100" Url="Lists/Missions">
+    <pnp:ContentTypeBindings>
+      <pnp:ContentTypeBinding ContentTypeID="0x0100076DFC42F03D4A7B8CE8D58DB30B1589" Default="true"/>
+    </pnp:ContentTypeBindings>
+  </pnp:ListInstance>
+  <pnp:ListInstance Title="Rebels" TemplateType="100" Url="Lists/Rebels">
+    <!--<pnp:ContentTypeBindings>-->
+      <!--<pnp:ContentTypeBinding ContentTypeID="0x0100076DFC42F03D4A7B8CE8D58DB30B1589" Default="true"/>-->
+    <!--</pnp:ContentTypeBindings>-->
+  </pnp:ListInstance>
 </pnp:Lists>

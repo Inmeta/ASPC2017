@@ -1,3 +1,13 @@
 <pnp:SiteFields xmlns:pnp="http://schemas.dev.office.com/PnP/2016/05/ProvisioningSchema">
+  <!--Test fields-->
   <Field ID="{174420fc-4423-4063-8820-71d749e0e056}" Name="ASPCName" DisplayName="ASPC Name" Type="Text" Group="{parameter:GenericFieldsGroup}" Description="" />
+
+  <!--Fields for missions-->
+  <Field ID="{652FF1D2-CCD1-447F-A9C9-32E49657F963}" Name="ASPC_Location" DisplayName="Location" Type="Text" Group="{parameter:GenericFieldsGroup}" Description="" />
+  <Field ID="{3C02EFAD-0AE2-47D6-B825-7CF17B71C4F8}" Name="ASPC_Ammunition" DisplayName="Ammunition" Type="Text" Group="{parameter:GenericFieldsGroup}" Description="" />
+  <Field ID="{D9A2B04A-A079-4528-992C-76E09F378AEF}" Name="ASPC_Status" DisplayName="Mission Status" Type="Text" Group="{parameter:GenericFieldsGroup}" Description="" />
+  <Field ID="{A9A5EDF7-0AFA-4F4C-ABB3-C82DD5BE3AAA}" Name="ASPC_Members" DisplayName="Members" Type="Text" Group="{parameter:GenericFieldsGroup}" Description="" />
+  <Field ID="{D93EB127-864D-41CB-BDC4-890D33EDB696}" Name="ASPC_Mission" DisplayName="Mission" Type="Text" Group="{parameter:GenericFieldsGroup}" Description="" />
+  
+  
 </pnp:SiteFields>
