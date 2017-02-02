@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 using System.Web.Security;
 using Microsoft.SharePoint.Client;
 
-namespace GraphConsoleAppV3
+namespace ZionGraph.Common
 {
 
     public static class UploadUserPhoto

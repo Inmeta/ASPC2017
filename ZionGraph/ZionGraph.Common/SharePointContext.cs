@@ -7,7 +7,7 @@ using System.Security.Principal;
 using System.Web;
 using System.Web.Configuration;
 
-namespace GraphConsoleAppV3
+namespace ZionGraph.Common
 {
     /// <summary>
     /// Encapsulates all the information from SharePoint.
@@ -216,7 +216,7 @@ namespace GraphConsoleAppV3
         /// Gets the database connection string from SharePoint for autohosted app.
         /// This method is deprecated because the autohosted option is no longer available.
         /// </summary>
-        [ObsoleteAttribute("This method is deprecated because the autohosted option is no longer available.", true)]
+        [Obsolete("This method is deprecated because the autohosted option is no longer available.", true)]
         public string GetDatabaseConnectionString()
         {
             throw new NotSupportedException("This method is deprecated because the autohosted option is no longer available.");

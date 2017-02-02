@@ -6,7 +6,7 @@ using System.Net;
 
 #endregion
 
-namespace GraphConsoleAppV3
+namespace ZionGraph.Common
 {
     public class Program
     {

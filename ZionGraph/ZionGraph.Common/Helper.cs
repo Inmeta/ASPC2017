@@ -4,7 +4,7 @@ using System;
 
 #endregion
 
-namespace GraphConsoleAppV3
+namespace ZionGraph.Common
 {
     internal class Helper
     {

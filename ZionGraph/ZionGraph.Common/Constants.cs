@@ -1,4 +1,4 @@
-namespace GraphConsoleAppV3
+namespace ZionGraph.Common
 {
     internal class AppModeConstants
     {

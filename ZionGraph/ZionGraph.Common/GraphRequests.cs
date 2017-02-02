@@ -24,7 +24,7 @@ using User = Microsoft.Azure.ActiveDirectory.GraphClient.User;
 
 #endregion
 
-namespace GraphConsoleAppV3
+namespace ZionGraph.Common
 {
     public class Requests
     {

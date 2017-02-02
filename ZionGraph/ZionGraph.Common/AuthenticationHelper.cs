@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.Azure.ActiveDirectory.GraphClient;
 using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
-namespace GraphConsoleAppV3
+namespace ZionGraph.Common
 {
     public class AuthenticationHelper
     {
