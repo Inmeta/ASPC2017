@@ -57,16 +57,23 @@ namespace ASPC
                     Console.WriteLine("Applying template...");
                     //Applying provisioning template
                     web.ApplyProvisioningTemplate(template);
-                    Console.WriteLine("Template applied. Publishing files...");
-                    
-                    //Publish files in masterpage gallery
-                    if(fulldeploy == "true")
+                                        
+                    if (fulldeploy == "true")
+                    {
+                        //Publish files in masterpage gallery
+                        Console.WriteLine("Publishing files...");
                         PublishFiles(ctx, webUrl, username, password, environment);
+
+                        //Adding contenttypes to list
+                        Console.WriteLine("Adding contenttype to list...");
+                        web.AddContentTypeToListById("Pages", "0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900DD3A1180E6EA47E596CD0450C5BBF6DD");
+                    }
                     else
                     {
+                        //Clearing nodes in template.xml file
                         template.ContentTypes.Clear();
                         template.Lists.Clear();
-                        template.SiteFields.Clear();                        
+                        template.SiteFields.Clear();
                     }
                 }
             }
