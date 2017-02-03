@@ -10,9 +10,30 @@ namespace ASPC
 {
     public class Create
     {
-        public void CreateSiteCollection(Web web, string url, string username, SecureString pwd, ClientContext ctx, string title)
+        private static Create _instance;
+        private Create() { }
+        public static Create Instance
         {
-            web.CreateWeb(title, url, string.Format("Site for {0}", title), "BLANKINTERNETCONTAINER#0", 1033);
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new Create();
+                }
+                return _instance;
+            }
+        }
+
+        public Web CreateSiteCollection( string url, string username, string pwd, ClientContext ctx, string title)
+        {
+            var password = new SecureString();
+            foreach (var c in pwd.ToCharArray()) { password.AppendChar(c); }
+            using (ClientContext clientContext = new ClientContext(url))
+            {
+                clientContext.Credentials = new SharePointOnlineCredentials(username, password);
+                var w = ctx.Web.CreateWeb(title, url, string.Format("Site for {0}", title), "BLANKINTERNETCONTAINER#0", 1033);
+                return w;
+            }
         }
     }
 }
