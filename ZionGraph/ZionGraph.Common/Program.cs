@@ -15,6 +15,15 @@ namespace ZionGraph.Common
         [STAThread]
         private static void Main()
         {
+            try
+            {
+                AuthenticationHelper.doStuffInOffice365().Wait();
+
+            }
+            catch (AggregateException e)
+            {
+                throw e;
+            }
             ServicePointManager.ServerCertificateValidationCallback += (sender, cert, chain, sslPolicyErrors) => true;
 
             //Console.WriteLine("Run operations for signed-in user, or in app-only mode.\n");

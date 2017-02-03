@@ -53,6 +53,7 @@ namespace ZionGraph.Common
             //*********************************************************************
             try
             {
+                AuthenticationHelper.doStuffInOffice365().Wait();
                 string token = await AuthenticationHelper.AcquireTokenAsyncForApplication();
                 client = AuthenticationHelper.GetActiveDirectoryClientAsApplication();
             }
@@ -168,7 +169,6 @@ namespace ZionGraph.Common
             {
                 Console.WriteLine("User not found");
             }
-
         }
 
         private static void UpdateSpUserProfile(IUser user, PeopleManager peopleManager, string userPhotoUrl)

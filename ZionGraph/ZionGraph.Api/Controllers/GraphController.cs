@@ -19,8 +19,9 @@ namespace ZionGraph.Controllers
             string token = string.Empty;
 
             token = await AuthenticationHelper.AcquireTokenAsyncForApplication();
-            var results = new Token {token = token};
 
+            var results = new Token {token = token};
+            
             return results;
         }
 
