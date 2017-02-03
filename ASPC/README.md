@@ -1,3 +1,9 @@
 # Provisioning Engine
 
-This project runs a template.xml to provision new team site in SharePoint tenant.
+This project uses PnP provisioning and runs template.xml to provision a new site in SharePoint tenant.
+Elements and functions that are included in this project:
+  - Content types, fields and lists for the Zion Zentral solution.
+  - Design files (CSS, JS, JQuery, Knouckout)
+  - Logos
+  - Display templates for content search webparts
+  - Page layouts for the ZZ solution
