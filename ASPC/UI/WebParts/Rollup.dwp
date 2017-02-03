@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebPart xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/WebPart/v2">
+  <Title>Rollup</Title>
+  <FrameType>None</FrameType>
+  <Description>Allows authors to enter rich text content.</Description>
+  <IsIncluded>true</IsIncluded>
+  <ZoneID>TopRightRow</ZoneID>
+  <PartOrder>0</PartOrder>
+  <FrameState>Normal</FrameState>
+  <Height />
+  <Width />
+  <AllowRemove>true</AllowRemove>
+  <AllowZoneChange>true</AllowZoneChange>
+  <AllowMinimize>true</AllowMinimize>
+  <AllowConnect>true</AllowConnect>
+  <AllowEdit>true</AllowEdit>
+  <AllowHide>true</AllowHide>
+  <IsVisible>true</IsVisible>
+  <DetailLink />
+  <HelpLink />
+  <HelpMode>Modeless</HelpMode>
+  <Dir>Default</Dir>
+  <PartImageSmall />
+  <MissingAssembly>Cannot import this Web Part.</MissingAssembly>
+  <PartImageLarge>/_layouts/15/images/mscontl.gif</PartImageLarge>
+  <IsIncludedFilter />
+  <Assembly>Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
+  <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+  <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">
+    <![CDATA[<script src="/_catalogs/masterpage/ASPC/SiteAssets/JS/jquery-3.1.0.min.js" type="text/javascript"></script><script src="/_catalogs/masterpage/ASPC/SiteAssets/JS/knockout-3.4.1.js" type="text/javascript"></script> 
+<div id="aspc-rollupdiv"> 
+		<div data-bind="foreach: menuItems"> 
+			<div style="padding: 10px; border-bottom-color: #ffffff; border-bottom-width: 1px; border-bottom-style: solid;">
+				<div data-bind="text: title" style="padding-left: 5px; font-size: 20px; font-weight: bold;"></div>
+				<div style="padding: 5px;"><span style="font-weight: bold;">Location:&#160;</span><span data-bind="text: location"></span></div>
+				<div style="padding: 5px;"><span style="font-weight: bold;">Members:&#160;</span><span data-bind="text: members"></span></div>
+				<div style="padding: 5px;"><span style="font-weight: bold;">Type:&#160;</span><span data-bind="text: type"></span></div>
+				<div style="padding: 5px;"><span style="font-weight: bold;">Desciption:&#160;</span><span data-bind="text: type"></span></div>
+			</div>  
+		</div> 
+    <div> 
+      <script src="/_catalogs/masterpage/ASPC/SiteAssets/JS/aspc.scripts.js" type="text/javascript"></script><script type="text/javascript">
+$(document).ready(function () {
+ASPC.Rollup.Init("aspc-rollupdiv");
+});</script>​<br/>​​<br/>​<br/>​<br/>​<br/>​<br/>​<br/>​<br/></div>
+</div>]]>
+  </Content>
+  <PartStorage xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
+</WebPart>

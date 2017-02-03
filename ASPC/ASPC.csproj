@@ -176,6 +176,8 @@
     <None Include="UI\Masterpages\aspc.master">
       <SubType>ASPXCodeBehind</SubType>
     </None>
+    <None Include="UI\WebParts\Bot.dwp" />
+    <None Include="UI\WebParts\Rollup.dwp" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Objects\ContentTypes.xml" />
@@ -203,9 +205,7 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="UI\WebParts\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

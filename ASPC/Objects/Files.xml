@@ -23,4 +23,14 @@
   <pnp:File Src="../../UI\DisplayTemplates\Control_ASPC.html" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/DisplayTemplates" Overwrite="false" />
   <pnp:File Src="../../UI\DisplayTemplates\Item_ASPC.html" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/DisplayTemplates" Overwrite="false" />
   <pnp:File Src="../../UI\DisplayTemplates\Group_ASPC.html" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/DisplayTemplates" Overwrite="false" />
+  <pnp:File Src="../../UI\WebParts\Bot.dwp" Folder="{sitecollection}/_catalogs/wp" Overwrite="true">
+    <pnp:Properties>
+      <pnp:Property Key="Group" Value="ASPC"></pnp:Property>
+    </pnp:Properties>
+  </pnp:File>
+  <pnp:File Src="../../UI\WebParts\Rollup.dwp" Folder="{sitecollection}/_catalogs/wp" Overwrite="true">
+    <pnp:Properties>
+      <pnp:Property Key="Group" Value="ASPC"></pnp:Property>
+    </pnp:Properties>
+  </pnp:File>
 </pnp:Files>
