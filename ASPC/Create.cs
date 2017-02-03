@@ -19,14 +19,14 @@ namespace ASPC
             }
         }
 
-        public Web CreateSiteCollection( string url, string username, string pwd, ClientContext ctx, string title)
+        public Web CreateSiteCollection( string url, string username, string pwd, string title)
         {
             var password = new SecureString();
             foreach (var c in pwd.ToCharArray()) { password.AppendChar(c); }
             using (ClientContext clientContext = new ClientContext(url))
             {
                 clientContext.Credentials = new SharePointOnlineCredentials(username, password);
-                var w = ctx.Web.CreateWeb(title, url, string.Format("Site for {0}", title), "BLANKINTERNETCONTAINER#0", 1033);                
+                var w = clientContext.Web.CreateWeb(title, url, string.Format("Site for {0}", title), "BLANKINTERNETCONTAINER#0", 1033);                
                 return w;
             }
         }
