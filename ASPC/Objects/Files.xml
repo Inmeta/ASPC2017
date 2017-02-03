@@ -5,9 +5,9 @@
   <pnp:File Src="../../SiteAssets\JS\knockout-3.4.1.js" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/JS" Overwrite="true" />
   <pnp:File Src="../../SiteAssets\JS\knockout.extentions.js" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/JS" Overwrite="true" />
   <!--Files-->
-  <pnp:File Src="../../UI\MasterPages\aspc.master" Folder="{sitecollection}/_catalogs/MasterPage/ASPC" Overwrite="true" />
+  <!--<pnp:File Src="../../UI\MasterPages\aspc.master" Folder="{sitecollection}/_catalogs/MasterPage/ASPC" Overwrite="true" />-->
   <!--STYLE-->
-  <pnp:File Src="../../SiteAssets\CSS\style.css" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/CSS" Overwrite="true" /> 
+  <!--<pnp:File Src="../../SiteAssets\CSS\style.css" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/CSS" Overwrite="true" />--> 
   <!--IMAGES-->
   <pnp:File Src="../../SiteAssets\Images\zion-logo.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" />
   <pnp:File Src="../../SiteAssets\Images\zion-logo-wide.png" Folder="{sitecollection}/_catalogs/MasterPage/ASPC/SiteAssets/Images" Overwrite="false" />

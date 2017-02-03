@@ -1,6 +1,7 @@
 ﻿using Microsoft.SharePoint.Client;
 using OfficeDevPnP.Core.Framework.Provisioning.Providers.Xml;
 using System;
+using System.Diagnostics;
 using System.Net;
 using System.Security;
 
@@ -8,6 +9,8 @@ namespace ASPC
 {
     public class Provisioning
     {
+        private const string Listenername = "PNPPOWERSHELLTRACELISTENER";
+
         private static Provisioning _instance;
         private Provisioning() { }
         public static Provisioning Instance
@@ -54,6 +57,11 @@ namespace ASPC
                     var provider = new XMLFileSystemTemplateProvider(String.Format(@"{0}\..\..\", AppDomain.CurrentDomain.BaseDirectory), string.Empty);
                     var template = provider.GetTemplate("template.xml");
 
+                    ConsoleTraceListener consoleListener = new ConsoleTraceListener(false);
+                    consoleListener.Name = Listenername;
+                    Trace.Listeners.Add(consoleListener);
+                    OfficeDevPnP.Core.Diagnostics.Log.LogLevel = OfficeDevPnP.Core.Diagnostics.LogLevel.Debug;
+
                     Console.WriteLine("Applying template...");
                     //Applying provisioning template
                     web.ApplyProvisioningTemplate(template);
@@ -61,8 +69,8 @@ namespace ASPC
                     if (fulldeploy == "true")
                     {
                         //Publish files in masterpage gallery
-                        Console.WriteLine("Publishing files...");
-                        PublishFiles(ctx, webUrl, username, password, environment);
+                        //Console.WriteLine("Publishing files...");
+                        //PublishFiles(ctx, webUrl, username, password, environment);
 
                         //Adding contenttypes to list
                         Console.WriteLine("Adding contenttype to list...");

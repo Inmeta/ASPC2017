@@ -20,4 +20,19 @@
   </pnp:ContentType>
   <pnp:ContentType ID="0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900DD3A1180E6EA47E596CD0450C5BBF6DD" Name="ASPC Home" Group="{parameter:GenericContentTypesGroup}" Description="ASPC Home Layout" Inherits="TRUE">
   </pnp:ContentType>
+  <pnp:ContentType ID="0x01003B4C7284F52B4901980EC00BFB54932A" Name="MissionUpdate" Group="{parameter:GenericContentTypesGroup}" Description="Contenttype for missionsupdates" Inherits="TRUE">
+    <pnp:FieldRefs>
+      <pnp:FieldRef ID="{652FF1D2-CCD1-447F-A9C9-32E49657F963}" Name="Location" />
+      <pnp:FieldRef ID="{3C02EFAD-0AE2-47D6-B825-7CF17B71C4F8}" Name="Ammunition" />
+      <pnp:FieldRef ID="{D9A2B04A-A079-4528-992C-76E09F378AEF}" Name="Mission Status" />      
+      <pnp:FieldRef ID="{D93EB127-864D-41CB-BDC4-890D33EDB696}" Name="Mission" />
+    </pnp:FieldRefs>
+  </pnp:ContentType>
+  <pnp:ContentType ID="0x01002F7BA866773341E48D0352152846B9D7" Name="Rebels" Group="{parameter:GenericContentTypesGroup}" Description="Contenttype for missionsupdates" Inherits="TRUE">
+    <pnp:FieldRefs>
+      <pnp:FieldRef ID="{652FF1D2-CCD1-447F-A9C9-32E49657F963}" Name="Location" />
+      <pnp:FieldRef ID="{A9A5EDF7-0AFA-4F4C-ABB3-C82DD5BE3AAA}" Name="Members" />
+      <pnp:FieldRef ID="{E7E67CF6-3320-4913-8BC5-1D70E441C808}" Name="ASPC_RebelType" />
+    </pnp:FieldRefs>
+  </pnp:ContentType>
 </pnp:ContentTypes>

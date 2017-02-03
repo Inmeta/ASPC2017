@@ -8,6 +8,7 @@
   <Field ID="{D9A2B04A-A079-4528-992C-76E09F378AEF}" Name="ASPC_Status" DisplayName="Mission Status" Type="Text" Group="{parameter:GenericFieldsGroup}" Description="" />
   <Field ID="{A9A5EDF7-0AFA-4F4C-ABB3-C82DD5BE3AAA}" Name="ASPC_Members" DisplayName="Members" Type="Text" Group="{parameter:GenericFieldsGroup}" Description="" />
   <Field ID="{D93EB127-864D-41CB-BDC4-890D33EDB696}" Name="ASPC_Mission" DisplayName="Mission" Type="Text" Group="{parameter:GenericFieldsGroup}" Description="" />
-  
+
+  <Field ID="{E7E67CF6-3320-4913-8BC5-1D70E441C808}" Name="ASPC_RebelType" DisplayName="Rebel Type" Type="Text" Group="{parameter:GenericFieldsGroup}" Description="" />
   
 </pnp:SiteFields>

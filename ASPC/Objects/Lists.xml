@@ -4,9 +4,14 @@
       <pnp:ContentTypeBinding ContentTypeID="0x0100076DFC42F03D4A7B8CE8D58DB30B1589" Default="true"/>
     </pnp:ContentTypeBindings>
   </pnp:ListInstance>
+  <pnp:ListInstance Title="MissionUpdates" TemplateType="100" Url="Lists/MissionUpdates">
+    <pnp:ContentTypeBindings>
+      <pnp:ContentTypeBinding ContentTypeID="0x01003B4C7284F52B4901980EC00BFB54932A" Default="true"/>
+    </pnp:ContentTypeBindings>
+  </pnp:ListInstance>
   <pnp:ListInstance Title="Rebels" TemplateType="100" Url="Lists/Rebels">
-    <!--<pnp:ContentTypeBindings>-->
-      <!--<pnp:ContentTypeBinding ContentTypeID="0x0100076DFC42F03D4A7B8CE8D58DB30B1589" Default="true"/>-->
-    <!--</pnp:ContentTypeBindings>-->
+    <pnp:ContentTypeBindings>
+    <pnp:ContentTypeBinding ContentTypeID="0x01002F7BA866773341E48D0352152846B9D7" Default="true"/>
+    </pnp:ContentTypeBindings>
   </pnp:ListInstance>
 </pnp:Lists>
