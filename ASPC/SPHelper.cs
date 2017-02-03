@@ -5,8 +5,8 @@ namespace ASPC
 {
     public class SPHelper
     {
-        private static SPHelper _instance;
-        private SPHelper() { }
+        public static SPHelper _instance;
+        public SPHelper() { }
         public static SPHelper Instance
         {
             get

@@ -49,5 +49,10 @@ ASPC.Rollup = {
                 console.log(data);
             }
         });
-    },    
+    },
+
+    Maps: function ()
+    {
+
+    }
 };

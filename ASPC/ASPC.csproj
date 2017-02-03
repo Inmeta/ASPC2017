@@ -178,6 +178,7 @@
     <None Include="UI\Masterpages\aspc.master">
       <SubType>ASPXCodeBehind</SubType>
     </None>
+    <None Include="UI\WebParts\Maps.dwp" />
     <None Include="UI\WebParts\Bot.dwp" />
     <None Include="UI\WebParts\Rollup.dwp" />
   </ItemGroup>

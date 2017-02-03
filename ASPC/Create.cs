@@ -5,8 +5,8 @@ namespace ASPC
 {
     public class Create
     {
-        private static Create _instance;
-        private Create() { }
+        public static Create _instance;
+        public Create() { }
         public static Create Instance
         {
             get
@@ -26,7 +26,7 @@ namespace ASPC
             using (ClientContext clientContext = new ClientContext(url))
             {
                 clientContext.Credentials = new SharePointOnlineCredentials(username, password);
-                var w = ctx.Web.CreateWeb(title, url, string.Format("Site for {0}", title), "BLANKINTERNETCONTAINER#0", 1033);
+                var w = ctx.Web.CreateWeb(title, url, string.Format("Site for {0}", title), "BLANKINTERNETCONTAINER#0", 1033);                
                 return w;
             }
         }
