@@ -123,7 +123,7 @@ namespace ASPC
                 item.File.Publish("");
             }
 
-            clientContext.ExecuteQuery();2
+            clientContext.ExecuteQuery();
         }
 
         public void ProvisionsubsiteTemplate(string webUrl, string username, string pwd, string environment, string fulldeploy)
