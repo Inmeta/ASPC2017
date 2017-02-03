@@ -1,6 +1,5 @@
 ﻿using Microsoft.SharePoint.Client;
 using System.Security;
-using AuthenticationManager = OfficeDevPnP.Core.AuthenticationManager;
 
 namespace ASPC
 {
