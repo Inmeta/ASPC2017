@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPC", "ASPC\ASPC.csproj", "{C0F364F9-3DCA-4417-A308-94A924982718}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPC.Api", "ASPC.Api\ASPC.Api.csproj", "{0BFA2D42-328D-4EE5-847E-65346EF312B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +20,12 @@ Global
 		{C0F364F9-3DCA-4417-A308-94A924982718}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C0F364F9-3DCA-4417-A308-94A924982718}.RunEXE|Any CPU.ActiveCfg = Debug|Any CPU
 		{C0F364F9-3DCA-4417-A308-94A924982718}.RunEXE|Any CPU.Build.0 = Debug|Any CPU
+		{0BFA2D42-328D-4EE5-847E-65346EF312B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BFA2D42-328D-4EE5-847E-65346EF312B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BFA2D42-328D-4EE5-847E-65346EF312B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BFA2D42-328D-4EE5-847E-65346EF312B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BFA2D42-328D-4EE5-847E-65346EF312B4}.RunEXE|Any CPU.ActiveCfg = Release|Any CPU
+		{0BFA2D42-328D-4EE5-847E-65346EF312B4}.RunEXE|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
