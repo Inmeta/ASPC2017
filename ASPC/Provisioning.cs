@@ -124,6 +124,32 @@ namespace ASPC
 
             clientContext.ExecuteQuery();
         }
+
+        public void ProvisionsubsiteTemplate(string webUrl, string username, string pwd, string environment, string fulldeploy)
+        {
+            Console.WriteLine("Starting provisioning");
+
+            //Creating securestring password based on input parameter
+            var password = new SecureString();
+            foreach (var c in pwd.ToCharArray()){password.AppendChar(c);}
+            using (var ctx = new ClientContext(webUrl))
+            {
+                ctx.Credentials = new SharePointOnlineCredentials(username, password);
+                var web = ctx.Web;
+                ctx.Load(web, w => w.Title);
+
+                ConsoleTraceListener consoleListener = new ConsoleTraceListener(false);
+                consoleListener.Name = Listenername;
+                Trace.Listeners.Add(consoleListener);
+                OfficeDevPnP.Core.Diagnostics.Log.LogLevel = OfficeDevPnP.Core.Diagnostics.LogLevel.Debug;
+
+                var provider = new XMLFileSystemTemplateProvider(String.Format(@"{0}\..\..\", AppDomain.CurrentDomain.BaseDirectory), string.Empty);
+                var template = provider.GetTemplate("subsitetemplate.xml");
+
+                web.ApplyProvisioningTemplate(template);
+
+            }
+        }
     }
 }
 

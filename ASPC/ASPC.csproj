@@ -192,10 +192,13 @@
     <Content Include="SiteAssets\CSS\style.css" />
     <Content Include="SiteAssets\Images\zion-logo-wide.png" />
     <Content Include="SiteAssets\Images\zion-logo.png" />
+    <Content Include="SiteAssets\JS\aspc.subsites.js" />
     <Content Include="SiteAssets\JS\aspc.scripts.js" />
     <Content Include="SiteAssets\JS\jquery-3.1.0.min.js" />
     <Content Include="SiteAssets\JS\knockout-3.4.1.js" />
     <Content Include="SiteAssets\JS\knockout.extentions.js" />
+    <Content Include="SubsiteObjects\Files.xml" />
+    <Content Include="subsitetemplate.xml" />
     <Content Include="template.xml" />
     <Content Include="UI\DisplayTemplates\Control_ASPC.html" />
     <Content Include="UI\DisplayTemplates\Group_ASPC.html" />

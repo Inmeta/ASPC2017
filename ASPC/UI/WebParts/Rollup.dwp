@@ -31,12 +31,12 @@
     <![CDATA[<script src="/sites/aspc2017/_catalogs/masterpage/ASPC/SiteAssets/JS/jquery-3.1.0.min.js" type="text/javascript"></script><script src="/sites/aspc2017/_catalogs/masterpage/ASPC/SiteAssets/JS/knockout-3.4.1.js" type="text/javascript"></script> 
 <div id="aspc-rollupdiv"> 
 		<div data-bind="foreach: menuItems"> 
-			<div style="padding: 10px; border-bottom-color: #ffffff; border-bottom-width: 1px; border-bottom-style: solid;">
+			<div style="padding: 10px; border-bottom-color: #ffffff; border-bottom-width: 1px; border-bottom-style: solid;color:#6EC738">
 				<div data-bind="text: title" style="padding-left: 5px; font-size: 20px; font-weight: bold;"></div>
-				<div style="padding: 5px;"><span style="font-weight: bold;">Location:&#160;</span><span data-bind="text: location"></span></div>
-				<div style="padding: 5px;"><span style="font-weight: bold;">Members:&#160;</span><span data-bind="text: members"></span></div>
-				<div style="padding: 5px;"><span style="font-weight: bold;">Type:&#160;</span><span data-bind="text: type"></span></div>
-				<div style="padding: 5px;"><span style="font-weight: bold;">Desciption:&#160;</span><span data-bind="text: type"></span></div>
+				<div style="padding: 5px;"><span style="font-weight: bold;color:#6EC738">Location:&#160;</span><span data-bind="text: location"></span></div>
+				<div style="padding: 5px;"><span style="font-weight: bold;color:#6EC738">Members:&#160;</span><span data-bind="text: members"></span></div>
+				<div style="padding: 5px;"><span style="font-weight: bold;color:#6EC738">Type:&#160;</span><span data-bind="text: type"></span></div>
+				<div style="padding: 5px;"><span style="font-weight: bold;color:#6EC738">Desciption:&#160;</span><span data-bind="text: type"></span></div>
 			</div>  
 		</div> 
     <div> 
