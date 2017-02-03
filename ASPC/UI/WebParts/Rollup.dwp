@@ -28,7 +28,7 @@
   <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
   <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
   <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor">
-    <![CDATA[<script src="/_catalogs/masterpage/ASPC/SiteAssets/JS/jquery-3.1.0.min.js" type="text/javascript"></script><script src="/_catalogs/masterpage/ASPC/SiteAssets/JS/knockout-3.4.1.js" type="text/javascript"></script> 
+    <![CDATA[<script src="/sites/aspc2017/_catalogs/masterpage/ASPC/SiteAssets/JS/jquery-3.1.0.min.js" type="text/javascript"></script><script src="/sites/aspc2017/_catalogs/masterpage/ASPC/SiteAssets/JS/knockout-3.4.1.js" type="text/javascript"></script> 
 <div id="aspc-rollupdiv"> 
 		<div data-bind="foreach: menuItems"> 
 			<div style="padding: 10px; border-bottom-color: #ffffff; border-bottom-width: 1px; border-bottom-style: solid;">
@@ -40,7 +40,7 @@
 			</div>  
 		</div> 
     <div> 
-      <script src="/_catalogs/masterpage/ASPC/SiteAssets/JS/aspc.scripts.js" type="text/javascript"></script><script type="text/javascript">
+      <script src="/sites/aspc2017/_catalogs/masterpage/ASPC/SiteAssets/JS/aspc.scripts.js" type="text/javascript"></script><script type="text/javascript">
 $(document).ready(function () {
 ASPC.Rollup.Init("aspc-rollupdiv");
 });</script>​<br/>​​<br/>​<br/>​<br/>​<br/>​<br/>​<br/>​<br/></div>

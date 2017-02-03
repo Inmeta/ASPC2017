@@ -36,7 +36,7 @@ ASPC.Rollup = {
 
     GetItems: function (elId) {
         $.ajax({
-            url: "/_api/web/lists/getbytitle('Rebels')/getitems",
+            url: "/sites/aspc2017/_api/web/lists/getbytitle('Rebels')/getitems",
             method: "POST",
             headers: { "accept": "application/json;odata=verbose", "content-type": "application/json;odata=verbose", "X-RequestDigest": $("#__REQUESTDIGEST").val() },
             data: JSON.stringify({ 'query': { '__metadata': { 'type': 'SP.CamlQuery' }, 'ViewXml': '<View><Query></Query></View>' } }),
