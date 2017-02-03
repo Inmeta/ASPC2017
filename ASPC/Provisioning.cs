@@ -69,8 +69,8 @@ namespace ASPC
                     if (fulldeploy == "true")
                     {
                         //Publish files in masterpage gallery
-                        //Console.WriteLine("Publishing files...");
-                        //PublishFiles(ctx, webUrl, username, password, environment);
+                        Console.WriteLine("Publishing files...");
+                        PublishFiles(ctx, webUrl, username, password, environment);
 
                         //Adding contenttypes to list
                         Console.WriteLine("Adding contenttype to list...");
